@@ -1,0 +1,214 @@
+*, 
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    background-color: hsl(210, 36%, 96%);
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+    letter-spacing: 0.25rem;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    color: hsl(205, 86%, 17%);
+    font-family: "Roboto", sans-serif;
+    
+
+}
+
+.grocery-section {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    width: 90vw;
+    max-width: 35rem;
+    border-radius: 0.5rem;
+    margin-top: 8rem;
+   
+}
+
+.alert {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+    color: hsl(210, 22%, 49%);
+    font-size: 0.7rem;
+    display: grid;
+    align-items: center;
+    
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#grocery-input {
+    border: transparent;
+    background-color: hsl(210, 36%, 96%);
+    color: hsl(210, 22%, 49%);
+    padding: 0.25rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    /*flex-grow: 1 0 auto;*/
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+input::placeholder {
+    font-family: "Open Sans", sans-serif;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+}
+
+
+.submit-btn {
+    border-color: transparent;
+    background-color: hsl(205, 86%, 81%);
+    flex: 0 0 5rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    content: #49a6e9;
+
+}
+
+.submit-btn:hover {
+    background-color: #49a6e9;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.grocery-container {
+    margin-top: 2rem;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.show-container {
+    visibility: visible;
+}
+.grocery-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+
+}
+
+.grocery-item:hover {
+    background-color: hsl(210, 36%, 96%);
+}
+
+.title {
+    color: hsl(209, 61%, 16%);
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+}
+
+.edit-btn, .delete-btn {
+    margin: 0 0.15rem;
+    transition: all 0.3s linear;
+
+}
+.edit-btn {
+    color: hsl(125, 71%, 66%);
+}
+
+.delete-btn {
+    color: hsl(360, 71%, 66%);
+}
+
+.edit-btn:hover {
+    color: hsl(125, 67%, 44%);
+}
+
+.delete-btn:hover {
+    color: hsl(360, 67%, 44%);
+}
+
+
+.clear-btn {
+    /*font-size: 1rem;*/
+    text-transform: capitalize;
+    color: hsl(360, 71%, 66%);
+    letter-spacing: 0.25rem;
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    transition: all 0.3s linear;
+    
+    
+}
+
+.clear-btn:hover {
+    color: hsl(360, 67%, 44%);
+
+}
+
+.alert-success {
+    background-color: hsl(125, 62%, 73%);
+    color: hsl(127, 85%, 10%);
+    opacity: 0.5;
+    
+    
+}
+
+.alert-danger {
+    background-color: hsl(360, 71%, 66%);
+    color: rgb(25, 1, 1);
+    opacity: 0.5;
+    
+    
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h1, h2, h3, h4 {
+        line-height: 1;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    
+}
+
